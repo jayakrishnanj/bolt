@@ -1,15 +1,16 @@
 project:
   machine_name: bolt
-  prefix: BLT
-  human_name: 'BLTed 8'
+  prefix: BOLT
+  human_name: 'BOLTed 8'
   profile:
     name: lightning
   local:
-    protocol: http
+    protocol: https
     hostname: 'local.${project.machine_name}.com'
 git:
   default_branch: master
-  remotes: {  }
+  remotes:
+    - boltd8@svn-5767.devcloud.hosting.acquia.com:boltd8.git
 drush:
   aliases:
     remote: '${project.machine_name}.test'
